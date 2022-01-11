@@ -1,6 +1,8 @@
+package academy.learnprogramming;
+
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello");
+//        System.out.println("academy.learnprogramming.Hello");
 
         int myFirstNumber = (10 + 5) + (2 * 10);
         int mySecondNumber = 12;
@@ -8,6 +10,6 @@ public class Hello {
         int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
         int myLastOne = 1000 - myTotal;
 
-        System.out.println(myLastOne);
+//        System.out.println(myLastOne);
     }
 }
