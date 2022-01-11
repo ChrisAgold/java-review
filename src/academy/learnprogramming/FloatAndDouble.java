@@ -13,6 +13,10 @@ public class FloatAndDouble {
         System.out.println("Double minimum value = " + myMinDoubleValue);
         System.out.println("Double max value = " + myMaxDoubleValue);
 
+// Convert a given number of pounds to kilograms
+        double numberOfPounds = 200d;
+        double convertedKilogram = numberOfPounds * 0.45359237d;
 
+        System.out.println("Converted kilograms = " + convertedKilogram);
     }
 }
