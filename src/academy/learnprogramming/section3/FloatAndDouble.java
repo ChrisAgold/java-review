@@ -1,4 +1,4 @@
-package academy.learnprogramming;
+package academy.learnprogramming.section3;
 
 public class FloatAndDouble {
     public static void main(String[] args) {
