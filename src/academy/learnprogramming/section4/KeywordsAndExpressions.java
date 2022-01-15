@@ -9,26 +9,48 @@ public class KeywordsAndExpressions {
         int bonus = 100;
 
         int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
-        System.out.println("Your final score was " + highScore);
+        // System.out.println("Your final score was " + highScore);
 
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
         highScore = calculateScore(gameOver, score, levelCompleted, bonus);
-        System.out.println("Your final score was " + highScore);
+        // System.out.println("Your final score was " + highScore);
+
+        // Methods Challenge Vid. 49
+        int highScorePosition = calculateHighScorePosition(1500);
+        displayHighScorePosition("Tim",highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(900);
+        displayHighScorePosition("Bob",highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(400);
+        displayHighScorePosition("Petter",highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(50);
+        displayHighScorePosition("Jim",highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(500);
+        displayHighScorePosition("Lin",highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(1000);
+        displayHighScorePosition("Ally",highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(100);
+        displayHighScorePosition("Ling",highScorePosition);
     }
 
-    // Methods Challenge 49
+    // Methods Challenge Vid. 49
     public static void displayHighScorePosition(String playerName, int highScorePosition) {
-        System.out.println(playerName + " managed to get into position " + highScorePosition + " on the high score table!");
+        // System.out.println(playerName + " managed to get into position " + highScorePosition + " on the high score table!");
     }
 
     public static int calculateHighScorePosition(int playerScore) {
-        if(playerScore > 1000) {
+        if(playerScore >= 1000) {
             return 1;
-        }else if(playerScore > 500 && playerScore < 1000) {
+        }else if(playerScore >= 500 && playerScore < 1000) {
             return 2;
-        } else if(playerScore > 100 && playerScore < 500) {
+        } else if(playerScore >= 100 && playerScore < 500) {
             return 3;
         } else {
             return 4;
@@ -45,9 +67,4 @@ public class KeywordsAndExpressions {
         // -1 indicates an error
         return -1;
     }
-
-
-
-
-
 }
