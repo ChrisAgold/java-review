@@ -19,42 +19,52 @@ public class KeywordsAndExpressions {
 
         // Methods Challenge Vid. 49
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Tim",highScorePosition);
+        displayHighScorePosition("Tim", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
-        displayHighScorePosition("Bob",highScorePosition);
+        displayHighScorePosition("Bob", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(400);
-        displayHighScorePosition("Petter",highScorePosition);
+        displayHighScorePosition("Petter", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(50);
-        displayHighScorePosition("Jim",highScorePosition);
+        displayHighScorePosition("Jim", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(500);
-        displayHighScorePosition("Lin",highScorePosition);
+        displayHighScorePosition("Lin", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(1000);
-        displayHighScorePosition("Ally",highScorePosition);
+        displayHighScorePosition("Ally", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(100);
-        displayHighScorePosition("Ling",highScorePosition);
+        displayHighScorePosition("Ling", highScorePosition);
     }
 
     // Methods Challenge Vid. 49
     public static void displayHighScorePosition(String playerName, int highScorePosition) {
-        // System.out.println(playerName + " managed to get into position " + highScorePosition + " on the high score table!");
+        System.out.println(playerName + " managed to get into position " + highScorePosition + " on the high score table!");
     }
 
     public static int calculateHighScorePosition(int playerScore) {
+//        if (playerScore >= 1000) {
+//            return 1;
+//        } else if (playerScore >= 500) {
+//            return 2;
+//        } else if (playerScore >= 100) {
+//            return 3;
+//        }
+//        return 4;
+
+        // Simplified Solution to above code
+        int position = 4; // assuming position 4 will be returned
         if(playerScore >= 1000) {
-            return 1;
-        }else if(playerScore >= 500 && playerScore < 1000) {
-            return 2;
-        } else if(playerScore >= 100 && playerScore < 500) {
-            return 3;
-        } else {
-            return 4;
+            position = 1;
+        } else if(playerScore >= 500) {
+            position = 2;
+        } else if(playerScore >= 100) {
+            position = 3;
         }
+        return position;
     }
 
     // Java Method
