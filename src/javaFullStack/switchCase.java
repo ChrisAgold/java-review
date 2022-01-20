@@ -2,23 +2,20 @@ package javaFullStack;
 
 public class switchCase {
     public static void main(String[] args) {
-        char x = 'B';
+        String name = "team";
         // SWITCH CASE
-        switch (x) {
-            case 'a':
-            case 'A':
-                System.out.println("The value of x is a");
+        switch (name.toLowerCase()) {
+            case "author":
+                System.out.println("Jimmy");
                 break;
-            case 'b':
-            case 'B':
-                System.out.println("The value of x is b");
+            case "team":
+                System.out.println("Go Java Team");
                 break;
-            case 'c':
-            case 'C':
-                System.out.println("The value of x is c");
+            case "editor":
+                System.out.println("Ling & Bob");
                 break;
             default:
-                System.out.println("The value of x is other than a,b,c");
+                System.out.println("Invalid Entry");
                 break;
         }
     }
