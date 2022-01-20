@@ -2,21 +2,23 @@ package javaFullStack;
 
 public class switchCase {
     public static void main(String[] args) {
-        int x = 2;
-
-        //SWITCH CASE
+        char x = 'B';
+        // SWITCH CASE
         switch (x) {
-            case 1:
-                System.out.println("The value of x is 1");
+            case 'a':
+            case 'A':
+                System.out.println("The value of x is a");
                 break;
-            case 2:
-                System.out.println("The value of x is 2");
+            case 'b':
+            case 'B':
+                System.out.println("The value of x is b");
                 break;
-            case 3:
-                System.out.println("The value of x is 3");
+            case 'c':
+            case 'C':
+                System.out.println("The value of x is c");
                 break;
             default:
-                System.out.println("The value of x is other than 1,2,3");
+                System.out.println("The value of x is other than a,b,c");
                 break;
         }
     }
