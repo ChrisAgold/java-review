@@ -14,18 +14,22 @@ public class loops {
 //        }
 
         // doWhile
-        int i = 0;
-        do {
-            System.out.println(i);
-            i++;
-        } while(i<10);
+//        int i = 11;
+//        do {
+//            System.out.println(i);
+//            i++;
+//        } while(i<10);
 
-    }
+        // i & j for loop
+        for(int i=1, j=1;i<10 || j<10 ; i++,j++) {
+            j++;
+            System.out.println("i="+i+" And j="+j);
+        }
+}
 }
 
 
-// Prime number loop
-//    int isPrime = 25;
-//        for (int i = 1; i <= 10; i++) {
-//
-//                }
+
+
+
+
