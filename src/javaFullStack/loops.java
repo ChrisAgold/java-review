@@ -1,7 +1,7 @@
 package javaFullStack;
 
-//public class loops {
-   //public static void main(String[] args) {
+public class loops {
+    public static void main(String[] args) {
 
         // forLoop
 //        for(int i = 1;i <=10; i++) {
@@ -42,8 +42,18 @@ package javaFullStack;
 //            j++;
 //            System.out.println("i=" + i + " And j=" + j);
 //        }while (i < 10 || j < 10);
-//    }
-// }
+
+        // Break & Continue
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+            if (i == 5) {
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+
+}
 
 
 
