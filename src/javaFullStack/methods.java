@@ -69,15 +69,6 @@ public class methods {
 //            System.out.println(num + " is not a Prime Number");
 //    }
 
-        // CALC PRIME METHOD EX
-        Calculate prime = new Calculate();
-        if (prime.isPrime(7)) {
-            System.out.println("Number is prime.");
-        } else {
-            System.out.println("Number is not prime.");
-        }
-
-
         // METHOD OVERLOADING PART II
 //    public static int sum(int x, int y) {
 //        System.out.println("Adding 2 int entities");
@@ -99,8 +90,13 @@ public class methods {
 //        return x + y + z;
 //    }
 
-        // PRIME NUMBER EXERCISE
-
+        // PRIME METHOD FROM primeMethod Class
+        primeMethod prime = new primeMethod();
+        if (prime.isPrime (7.5)) {
+            System.out.println("Number passed is prime");
+        } else {
+            System.out.println("Number passed is not prime");
+        }
     }
 }
 
